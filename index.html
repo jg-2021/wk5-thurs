@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <main>
+        <h1>Pizza Order</h1>
+        <form name="f1">
+            <fieldset>
+                <legend>Name</legend>
+            <input type="text" placeholder="Name" required>
+            </fieldset><br><br><br>
+            <fieldset>
+                <legend>Pizza</legend>
+            <div>
+            <label for="crust">
+                <select id="crust" name="crust">
+                    <option value="thin">Thin</option>
+                    <option value="stuffed">Stuffed</option>
+                    <option value="pan">Pan</option>
+            </label>
+            
+            <label for="delivery"><input id="delivery" type="radio" name="delpik" required value="delivery"> Delivery</label>
+            <label for="pickup"><input id="pickup" type="radio" onclick="Cbtn()" name="delpik" value="pickup">Pick-up</label><br><br>
+            
+            <label for="pepperoni"><input id="pepperoni" type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+            <label for="mushrooms"><input id="mushrooms" type="checkbox" name="toppings" value="mushrooms">Mushrooms</label>
+            <label for="sausage"><input id="sausage" type="checkbox" name="toppings" value="sausage"> Sausage</label>
+            <label for="green Peppers"><input id="green Peppers" type="checkbox" name="toppings" value="green Peppers">Green Peppers</label>
+            <label for="sausage"><input id="sausage" type="checkbox" name="toppings" value="lazy">sausage</label>
+            <label for="onions"><input id="onions" type="checkbox" name="toppings" value="onions"> Onions</label><p>(Plain cheese if none selected)</p>
+            </fieldset><br><br>
+            
+            <input type="text" id="address" placeholder="Address" required><br><br>
+            <input type="tel" name="phn" placeholder="Telephone" required><br><br>
+            <input type="text" placeholder="Additional instructions"><br><br>
+            <button type="submit" onclick="Number(document.f1.phn)">Continue to payment</button>
+            </div>
+          </form>
+          <form action="info.html">
+            <p>Sign in for quick reorder</p>
+            <button type="submit" onclick="href='info.html'">Sign In</button>
+            </form>
+    </main>
+</body>
+<script src="js/index.js"></script>
+</html>
